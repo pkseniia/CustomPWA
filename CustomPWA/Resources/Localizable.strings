@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  CustomPWA
+
+  Created by Kseniia Poternak on 07.11.2020.
+  
+*/
+
+/* HomeScreen */
+"HOME_NAVIGATION_TITLE" = "Custom PWA App";

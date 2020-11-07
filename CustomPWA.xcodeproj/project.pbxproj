@@ -8,22 +8,82 @@
 
 /* Begin PBXBuildFile section */
 		36D3798325571A6B000D6967 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D3798225571A6B000D6967 /* AppDelegate.swift */; };
-		36D3798525571A6B000D6967 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D3798425571A6B000D6967 /* SceneDelegate.swift */; };
-		36D3798725571A6B000D6967 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D3798625571A6B000D6967 /* ViewController.swift */; };
-		36D3798A25571A6B000D6967 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36D3798825571A6B000D6967 /* Main.storyboard */; };
 		36D3798C25571A6E000D6967 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36D3798B25571A6E000D6967 /* Assets.xcassets */; };
 		36D3798F25571A6E000D6967 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36D3798D25571A6E000D6967 /* LaunchScreen.storyboard */; };
+		36D379AA25571F64000D6967 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36D379A925571F64000D6967 /* Colors.xcassets */; };
+		36D379AF2557227E000D6967 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D379AE2557227E000D6967 /* AppCoordinator.swift */; };
+		36D379B425572364000D6967 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D379B325572364000D6967 /* RootViewController.swift */; };
+		36D379B825572370000D6967 /* Root.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36D379B725572370000D6967 /* Root.storyboard */; };
+		36D379BD255723D0000D6967 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D379BC255723D0000D6967 /* Storyboarded.swift */; };
+		36D379C825572425000D6967 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D379C725572425000D6967 /* UIViewControllerExtension.swift */; };
+		36D379CC25572448000D6967 /* GlobalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D379CB25572448000D6967 /* GlobalExtension.swift */; };
+		36D379D025572502000D6967 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D379CF25572502000D6967 /* HomeRouter.swift */; };
+		36D379D425572537000D6967 /* RouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D379D325572537000D6967 /* RouterProtocol.swift */; };
+		36D379D8255725BE000D6967 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D379D7255725BE000D6967 /* CustomNavigationController.swift */; };
+		36D379DC25572679000D6967 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D379DB25572679000D6967 /* UIColorExtension.swift */; };
+		36D379E125573017000D6967 /* ProximaNova-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36D379E025573017000D6967 /* ProximaNova-Regular.ttf */; };
+		36D379E425573034000D6967 /* ProximaNova-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36D379E325573034000D6967 /* ProximaNova-Semibold.ttf */; };
+		36D379E725573041000D6967 /* ProximaNova-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36D379E625573041000D6967 /* ProximaNova-Light.ttf */; };
+		36D379EC255730C7000D6967 /* FontEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D379EB255730C7000D6967 /* FontEnum.swift */; };
+		36D379F02557310C000D6967 /* StringAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D379EF2557310C000D6967 /* StringAttributes.swift */; };
+		36D379F3255731A7000D6967 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D379F2255731A7000D6967 /* UIViewExtension.swift */; };
+		36D379F6255732AA000D6967 /* ImagesEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D379F5255732AA000D6967 /* ImagesEnum.swift */; };
+		36D379F9255732DA000D6967 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D379F8255732DA000D6967 /* UIImageExtension.swift */; };
+		36D379FD2557336F000D6967 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D379FC2557336F000D6967 /* HomeViewController.swift */; };
+		36D37A022557349F000D6967 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D37A002557349F000D6967 /* BaseViewController.swift */; };
+		36D37A032557349F000D6967 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D37A012557349F000D6967 /* BasePresenter.swift */; };
+		36D37A0725573660000D6967 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D37A0625573660000D6967 /* HomePresenter.swift */; };
+		36D37A0A2557376B000D6967 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D37A092557376B000D6967 /* CoordinatorProtocol.swift */; };
+		36D37A0D25573810000D6967 /* HomeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D37A0C25573810000D6967 /* HomeConfigurator.swift */; };
+		36D37A1325573889000D6967 /* ServicesContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D37A1225573889000D6967 /* ServicesContainer.swift */; };
+		36D37A17255739FE000D6967 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D37A16255739FE000D6967 /* HomeCoordinator.swift */; };
+		36D37A1D25573BEA000D6967 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36D37A1C25573BEA000D6967 /* Home.storyboard */; };
+		36D37A2025573C81000D6967 /* NavigationInitProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D37A1F25573C81000D6967 /* NavigationInitProtocol.swift */; };
+		36D37A2325573DB2000D6967 /* StartService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D37A2225573DB2000D6967 /* StartService.swift */; };
+		36D37A2625574059000D6967 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D37A2525574059000D6967 /* Constants.swift */; };
+		36D37A2A255740AD000D6967 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D37A29255740AD000D6967 /* StringExtension.swift */; };
+		36D37A2D255740E2000D6967 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 36D37A2C255740E2000D6967 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		36D3797F25571A6B000D6967 /* CustomPWA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomPWA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36D3798225571A6B000D6967 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		36D3798425571A6B000D6967 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		36D3798625571A6B000D6967 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		36D3798925571A6B000D6967 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		36D3798B25571A6E000D6967 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36D3798E25571A6E000D6967 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		36D3799025571A6E000D6967 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36D379A925571F64000D6967 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		36D379AE2557227E000D6967 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		36D379B325572364000D6967 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		36D379B725572370000D6967 /* Root.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Root.storyboard; sourceTree = "<group>"; };
+		36D379BC255723D0000D6967 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		36D379C725572425000D6967 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		36D379CB25572448000D6967 /* GlobalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalExtension.swift; sourceTree = "<group>"; };
+		36D379CF25572502000D6967 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		36D379D325572537000D6967 /* RouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterProtocol.swift; sourceTree = "<group>"; };
+		36D379D7255725BE000D6967 /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
+		36D379DB25572679000D6967 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		36D379E025573017000D6967 /* ProximaNova-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Regular.ttf"; sourceTree = "<group>"; };
+		36D379E325573034000D6967 /* ProximaNova-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Semibold.ttf"; sourceTree = "<group>"; };
+		36D379E625573041000D6967 /* ProximaNova-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Light.ttf"; sourceTree = "<group>"; };
+		36D379EB255730C7000D6967 /* FontEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontEnum.swift; sourceTree = "<group>"; };
+		36D379EF2557310C000D6967 /* StringAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringAttributes.swift; sourceTree = "<group>"; };
+		36D379F2255731A7000D6967 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		36D379F5255732AA000D6967 /* ImagesEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesEnum.swift; sourceTree = "<group>"; };
+		36D379F8255732DA000D6967 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		36D379FC2557336F000D6967 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		36D37A002557349F000D6967 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		36D37A012557349F000D6967 /* BasePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		36D37A0625573660000D6967 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		36D37A092557376B000D6967 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		36D37A0C25573810000D6967 /* HomeConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeConfigurator.swift; sourceTree = "<group>"; };
+		36D37A1225573889000D6967 /* ServicesContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesContainer.swift; sourceTree = "<group>"; };
+		36D37A16255739FE000D6967 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		36D37A1C25573BEA000D6967 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		36D37A1F25573C81000D6967 /* NavigationInitProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationInitProtocol.swift; sourceTree = "<group>"; };
+		36D37A2225573DB2000D6967 /* StartService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartService.swift; sourceTree = "<group>"; };
+		36D37A2525574059000D6967 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		36D37A29255740AD000D6967 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		36D37A2C255740E2000D6967 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +116,181 @@
 		36D3798125571A6B000D6967 /* CustomPWA */ = {
 			isa = PBXGroup;
 			children = (
-				36D3798225571A6B000D6967 /* AppDelegate.swift */,
-				36D3798425571A6B000D6967 /* SceneDelegate.swift */,
-				36D3798625571A6B000D6967 /* ViewController.swift */,
-				36D3798825571A6B000D6967 /* Main.storyboard */,
-				36D3798B25571A6E000D6967 /* Assets.xcassets */,
-				36D3798D25571A6E000D6967 /* LaunchScreen.storyboard */,
-				36D3799025571A6E000D6967 /* Info.plist */,
+				36D379A025571BB3000D6967 /* AppHandling */,
+				36D379B125572337000D6967 /* Modules */,
+				36D379E9255730A5000D6967 /* Models */,
+				36D37A112557386E000D6967 /* Services */,
+				36D379C0255723ED000D6967 /* Helpers */,
+				36D379BA255723A9000D6967 /* Protocols */,
+				36D379A225571BC5000D6967 /* Resources */,
 			);
 			path = CustomPWA;
+			sourceTree = "<group>";
+		};
+		36D379A025571BB3000D6967 /* AppHandling */ = {
+			isa = PBXGroup;
+			children = (
+				36D3798225571A6B000D6967 /* AppDelegate.swift */,
+				36D379AD2557225F000D6967 /* Coordinator */,
+			);
+			path = AppHandling;
+			sourceTree = "<group>";
+		};
+		36D379A225571BC5000D6967 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				36D379DF25572FEA000D6967 /* Fonts */,
+				36D3798B25571A6E000D6967 /* Assets.xcassets */,
+				36D379A925571F64000D6967 /* Colors.xcassets */,
+				36D3798D25571A6E000D6967 /* LaunchScreen.storyboard */,
+				36D37A2C255740E2000D6967 /* Localizable.strings */,
+				36D3799025571A6E000D6967 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		36D379AD2557225F000D6967 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				36D379AE2557227E000D6967 /* AppCoordinator.swift */,
+				36D37A16255739FE000D6967 /* HomeCoordinator.swift */,
+				36D379CE255724EE000D6967 /* Routers */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		36D379B125572337000D6967 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				36D379D6255725AF000D6967 /* CustomNavigationController */,
+				36D379B225572345000D6967 /* RootModule */,
+				36D379FF25573473000D6967 /* Base */,
+				36D379FB25573337000D6967 /* HomeModule */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		36D379B225572345000D6967 /* RootModule */ = {
+			isa = PBXGroup;
+			children = (
+				36D379B325572364000D6967 /* RootViewController.swift */,
+				36D379B725572370000D6967 /* Root.storyboard */,
+			);
+			path = RootModule;
+			sourceTree = "<group>";
+		};
+		36D379BA255723A9000D6967 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				36D379BB255723B6000D6967 /* ArchitectureProtocols */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		36D379BB255723B6000D6967 /* ArchitectureProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				36D379BC255723D0000D6967 /* Storyboarded.swift */,
+				36D37A092557376B000D6967 /* CoordinatorProtocol.swift */,
+				36D379D325572537000D6967 /* RouterProtocol.swift */,
+				36D37A1F25573C81000D6967 /* NavigationInitProtocol.swift */,
+			);
+			path = ArchitectureProtocols;
+			sourceTree = "<group>";
+		};
+		36D379C0255723ED000D6967 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				36D379C62557240C000D6967 /* Extensions */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		36D379C62557240C000D6967 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				36D379CB25572448000D6967 /* GlobalExtension.swift */,
+				36D379C725572425000D6967 /* UIViewControllerExtension.swift */,
+				36D379DB25572679000D6967 /* UIColorExtension.swift */,
+				36D379EF2557310C000D6967 /* StringAttributes.swift */,
+				36D379F2255731A7000D6967 /* UIViewExtension.swift */,
+				36D379F8255732DA000D6967 /* UIImageExtension.swift */,
+				36D37A29255740AD000D6967 /* StringExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		36D379CE255724EE000D6967 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				36D379CF25572502000D6967 /* HomeRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		36D379D6255725AF000D6967 /* CustomNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				36D379D7255725BE000D6967 /* CustomNavigationController.swift */,
+			);
+			path = CustomNavigationController;
+			sourceTree = "<group>";
+		};
+		36D379DF25572FEA000D6967 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				36D379E025573017000D6967 /* ProximaNova-Regular.ttf */,
+				36D379E325573034000D6967 /* ProximaNova-Semibold.ttf */,
+				36D379E625573041000D6967 /* ProximaNova-Light.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		36D379E9255730A5000D6967 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				36D379EA255730B4000D6967 /* AppModels */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		36D379EA255730B4000D6967 /* AppModels */ = {
+			isa = PBXGroup;
+			children = (
+				36D37A2525574059000D6967 /* Constants.swift */,
+				36D379EB255730C7000D6967 /* FontEnum.swift */,
+				36D379F5255732AA000D6967 /* ImagesEnum.swift */,
+			);
+			path = AppModels;
+			sourceTree = "<group>";
+		};
+		36D379FB25573337000D6967 /* HomeModule */ = {
+			isa = PBXGroup;
+			children = (
+				36D379FC2557336F000D6967 /* HomeViewController.swift */,
+				36D37A0625573660000D6967 /* HomePresenter.swift */,
+				36D37A0C25573810000D6967 /* HomeConfigurator.swift */,
+				36D37A1C25573BEA000D6967 /* Home.storyboard */,
+			);
+			path = HomeModule;
+			sourceTree = "<group>";
+		};
+		36D379FF25573473000D6967 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				36D37A002557349F000D6967 /* BaseViewController.swift */,
+				36D37A012557349F000D6967 /* BasePresenter.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		36D37A112557386E000D6967 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				36D37A1225573889000D6967 /* ServicesContainer.swift */,
+				36D37A2225573DB2000D6967 /* StartService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +350,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36D379AA25571F64000D6967 /* Colors.xcassets in Resources */,
+				36D379E725573041000D6967 /* ProximaNova-Light.ttf in Resources */,
+				36D379E125573017000D6967 /* ProximaNova-Regular.ttf in Resources */,
+				36D379E425573034000D6967 /* ProximaNova-Semibold.ttf in Resources */,
+				36D37A2D255740E2000D6967 /* Localizable.strings in Resources */,
 				36D3798F25571A6E000D6967 /* LaunchScreen.storyboard in Resources */,
+				36D379B825572370000D6967 /* Root.storyboard in Resources */,
 				36D3798C25571A6E000D6967 /* Assets.xcassets in Resources */,
-				36D3798A25571A6B000D6967 /* Main.storyboard in Resources */,
+				36D37A1D25573BEA000D6967 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +369,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36D3798725571A6B000D6967 /* ViewController.swift in Sources */,
+				36D379CC25572448000D6967 /* GlobalExtension.swift in Sources */,
+				36D37A032557349F000D6967 /* BasePresenter.swift in Sources */,
+				36D37A0A2557376B000D6967 /* CoordinatorProtocol.swift in Sources */,
+				36D379AF2557227E000D6967 /* AppCoordinator.swift in Sources */,
+				36D379D425572537000D6967 /* RouterProtocol.swift in Sources */,
+				36D37A2A255740AD000D6967 /* StringExtension.swift in Sources */,
+				36D37A0D25573810000D6967 /* HomeConfigurator.swift in Sources */,
+				36D379EC255730C7000D6967 /* FontEnum.swift in Sources */,
+				36D37A2625574059000D6967 /* Constants.swift in Sources */,
+				36D37A2325573DB2000D6967 /* StartService.swift in Sources */,
+				36D379D8255725BE000D6967 /* CustomNavigationController.swift in Sources */,
+				36D379D025572502000D6967 /* HomeRouter.swift in Sources */,
+				36D379F6255732AA000D6967 /* ImagesEnum.swift in Sources */,
+				36D37A022557349F000D6967 /* BaseViewController.swift in Sources */,
 				36D3798325571A6B000D6967 /* AppDelegate.swift in Sources */,
-				36D3798525571A6B000D6967 /* SceneDelegate.swift in Sources */,
+				36D379F9255732DA000D6967 /* UIImageExtension.swift in Sources */,
+				36D37A2025573C81000D6967 /* NavigationInitProtocol.swift in Sources */,
+				36D379C825572425000D6967 /* UIViewControllerExtension.swift in Sources */,
+				36D379DC25572679000D6967 /* UIColorExtension.swift in Sources */,
+				36D379FD2557336F000D6967 /* HomeViewController.swift in Sources */,
+				36D37A17255739FE000D6967 /* HomeCoordinator.swift in Sources */,
+				36D37A0725573660000D6967 /* HomePresenter.swift in Sources */,
+				36D37A1325573889000D6967 /* ServicesContainer.swift in Sources */,
+				36D379F3255731A7000D6967 /* UIViewExtension.swift in Sources */,
+				36D379B425572364000D6967 /* RootViewController.swift in Sources */,
+				36D379BD255723D0000D6967 /* Storyboarded.swift in Sources */,
+				36D379F02557310C000D6967 /* StringAttributes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		36D3798825571A6B000D6967 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				36D3798925571A6B000D6967 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		36D3798D25571A6E000D6967 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -216,7 +464,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +519,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -288,7 +536,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J2FU8V9J87;
-				INFOPLIST_FILE = CustomPWA/Info.plist;
+				INFOPLIST_FILE = "CustomPWA//Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +544,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.pkseniia.CustomPWA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,7 +555,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J2FU8V9J87;
-				INFOPLIST_FILE = CustomPWA/Info.plist;
+				INFOPLIST_FILE = "CustomPWA//Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +563,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.pkseniia.CustomPWA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
