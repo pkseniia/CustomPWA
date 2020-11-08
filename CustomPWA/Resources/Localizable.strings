@@ -8,3 +8,5 @@
 
 /* HomeScreen */
 "HOME_NAVIGATION_TITLE" = "Custom PWA App";
+"HOME_OPEN_SEARCH_BUTTON_TITLE" = "Search for image";
+"HOME_OPEN_GALLERY_BUTTON_TITLE" = "Get image from gallery";

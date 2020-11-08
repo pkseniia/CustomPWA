@@ -7,6 +7,8 @@
 
 import UIKit
 
+typealias ViewProtocol = BaseViewProtocol & NavigationInitProtocol
+
 protocol BaseViewProtocol: AnyObject {
     
     func showAlert(title: String?,

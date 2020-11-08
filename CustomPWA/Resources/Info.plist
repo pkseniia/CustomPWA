@@ -45,5 +45,9 @@
 		<string>ProximaNova-Semibold.ttf</string>
 		<string>ProximaNova-Light.ttf</string>
 	</array>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>$(PRODUCT_NAME) wants to use your photos</string>
+	<key>PHPhotoLibraryPreventAutomaticLimitedAccessAlert</key>
+	<false/>
 </dict>
 </plist>

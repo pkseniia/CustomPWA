@@ -16,9 +16,11 @@ protocol HomeConfiguratorProtocol {
 class HomeConfigurator: HomeConfiguratorProtocol {
     func configure(viewController: HomeViewController, coordinator: CoordinatorProtocol,
                    servicesContainer: ServicesContainerProtocol) {
+        let selectImageUseCase = SelectImageUseCase(photoService: GetPhotoService())
         let homePresenter = HomePresenter(view: viewController,
                                           coordinator: coordinator,
-                                          servicesContainer: servicesContainer)
+                                          servicesContainer: servicesContainer,
+                                          selectImageUseCase: selectImageUseCase)
         viewController.presenter = homePresenter
     }
 }
