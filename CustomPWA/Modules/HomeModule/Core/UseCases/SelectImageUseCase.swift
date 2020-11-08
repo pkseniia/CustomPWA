@@ -11,14 +11,13 @@ typealias ImageSelectedCompletion = (Result<UIImage, Error>) -> Void
 
 protocol SelectImageUseCaseProtocol {
     func set(presentationController: UIViewController)
-    func checkForAccess(completion: @escaping (Bool) -> Void)
-    func selectPhoto()
+    func checkForAccess(for type: PhotoServiceType, completion: @escaping () -> Void)
     func updateImage(completion: @escaping ImageSelectedCompletion)
 }
 
 class SelectImageUseCase {
     
-    let photoService: GetPhotoServiceProtocol
+    let photoService: PhotoServiceProtocol
     var newPhotoSelected: ImageSelectedCompletion?
     
     var newPhoto: UIImage = UIImage() {
@@ -27,7 +26,7 @@ class SelectImageUseCase {
         }
     }
     
-    init(photoService: GetPhotoServiceProtocol) {
+    init(photoService: PhotoServiceProtocol) {
         self.photoService = photoService
     }
 }
@@ -38,12 +37,8 @@ extension SelectImageUseCase: SelectImageUseCaseProtocol {
         photoService.set(presentationController: presentationController, delegate: self)
     }
     
-    func checkForAccess(completion: @escaping (Bool) -> Void) {
-        photoService.checkForAccess(completion: completion)
-    }
-    
-    func selectPhoto() {
-        photoService.selectPhoto()
+    func checkForAccess(for type: PhotoServiceType, completion: @escaping () -> Void) {
+        photoService.checkForAccess(for: type, completion: completion)
     }
     
     func updateImage(completion: @escaping ImageSelectedCompletion) {
@@ -54,10 +49,8 @@ extension SelectImageUseCase: SelectImageUseCaseProtocol {
 extension SelectImageUseCase: ImagePickerDelegate {
     func didSelect(result: GetPhotoServiceResult) {
         switch result {
-        case .success(let image):
-            newPhoto = image
-        case .failure(let error):
-            newPhotoSelected?(.failure(error))
+        case .success(let image): newPhoto = image
+        case .failure(let error): newPhotoSelected?(.failure(error))
         }
     }
 }

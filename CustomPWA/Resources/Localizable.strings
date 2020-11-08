@@ -8,5 +8,11 @@
 
 /* HomeScreen */
 "HOME_NAVIGATION_TITLE" = "Custom PWA App";
-"HOME_OPEN_SEARCH_BUTTON_TITLE" = "Search for image";
-"HOME_OPEN_GALLERY_BUTTON_TITLE" = "Get image from gallery";
+"HOME_TAKE_PHOTO_BUTTON_TITLE" = "Take photo";
+"HOME_OPEN_GALLERY_BUTTON_TITLE" = "Open gallery";
+
+/* AppForIcon */
+"APP_FOR_ICON_NAVIGATION_TITLE" = "Custom app";
+
+/* Errors */
+"ERRORS_IMAGE_IS_BROKEN" = "Selected image is broken";

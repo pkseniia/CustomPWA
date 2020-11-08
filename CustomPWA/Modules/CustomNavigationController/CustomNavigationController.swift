@@ -11,15 +11,13 @@ class CustomNavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        configurateUI()
-        interactivePopGestureRecognizer?.delegate = self
         delegate = self
-        navigationItem.backBarButtonItem = UIBarButtonItem(title: " ", style: .plain, target: nil, action: nil)
+        configurateUI()
     }
 
     func configurateUI() {
         navigationBar.barTintColor = .named(.navigationBackground)
-//        navigationBar.tintColor = .named(.background)
+        navigationBar.tintColor = .named(.textColor)
         let titleAttributes = Attributes.main(with: Fonts.semibold.of(size: 20),
                                               color: .named(.textColor))
         navigationBar.titleTextAttributes = titleAttributes
@@ -37,12 +35,5 @@ extension CustomNavigationController: UINavigationControllerDelegate {
         viewController.navigationController?.navigationBar.backIndicatorImage = .custom(name: .arrowLeft)
         viewController.navigationController?.navigationBar.backIndicatorTransitionMaskImage = .custom(name: .arrowLeft)
         viewController.navigationItem.backBarButtonItem = UIBarButtonItem(title: " ", style: .plain, target: nil, action: nil)
-    }
-}
-
-// MARK: - Gesture recognizer delegate
-extension CustomNavigationController: UIGestureRecognizerDelegate {
-    func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
-        return true
     }
 }

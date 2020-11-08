@@ -9,8 +9,7 @@ import UIKit
 
 protocol HomePresenterProtocol: BasePresenterProtocol {
     func set(presentationController: UIViewController)
-    func openSearch()
-    func openGallery()
+    func checkForAccess(for type: PhotoServiceType)
 }
 
 class HomePresenter<View: HomeViewProtocol>: BasePresenter<View> {
@@ -39,16 +38,12 @@ class HomePresenter<View: HomeViewProtocol>: BasePresenter<View> {
             guard let self = self else { return }
             switch result {
             case .success(let image):
-                print("🐰")
+                self.coordinator.pushIconForAppViewController(servicesContainer: self.servicesContainer, image: image)
             case .failure(let error):
 //                self.process(error: error)
                 print("🦊")
             }
         }
-    }
-    
-    private func selectPhoto() {
-        selectImageUseCase.selectPhoto()
     }
 }
 
@@ -58,21 +53,12 @@ extension HomePresenter: HomePresenterProtocol {
         selectImageUseCase.set(presentationController: presentationController)
     }
     
-    func openGallery() {
-        selectImageUseCase.checkForAccess(completion: { [weak self] success in
+    func checkForAccess(for type: PhotoServiceType) {
+        selectImageUseCase.checkForAccess(for: type, completion: { [weak self] in
             guard let self = self else { return }
             ensureMainThread {
-                if success {
-                    self.selectPhoto()
-                } else {
-                    self.view.openSettings()
-                }
+                self.view.openSettings()
             }
         })
-    }
-    
-    func openSearch() {
-        print("openSearch")
-    }
-    
+    }    
 }

@@ -8,6 +8,7 @@
 import Foundation
 
 protocol CoordinatorProtocol {
+    func pushIconForAppViewController(servicesContainer: ServicesContainerProtocol, image: GetImage)
     func pop(servicesContainer: ServicesContainerProtocol)
     func popToRoot(servicesContainer: ServicesContainerProtocol)
 }

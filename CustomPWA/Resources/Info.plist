@@ -49,5 +49,7 @@
 	<string>$(PRODUCT_NAME) wants to use your photos</string>
 	<key>PHPhotoLibraryPreventAutomaticLimitedAccessAlert</key>
 	<false/>
+	<key>NSCameraUsageDescription</key>
+	<string>$(PRODUCT_NAME) wants to take pictures</string>
 </dict>
 </plist>

@@ -18,6 +18,7 @@ class HomeCoordinator {
 
     private enum Path: String {
         case home = "Home"
+        case appForIcon = "AppForIcon"
     }
 
     func initializeStartController(servicesContainer: ServicesContainerProtocol) ->
@@ -35,6 +36,16 @@ class HomeCoordinator {
                                coordinator: self,
                                servicesContainer: servicesContainer)
         return viewController
+    }
+    
+    func pushIconForAppViewController(servicesContainer: ServicesContainerProtocol, image: GetImage) {
+        let viewController = AppForIconViewController.instantiate(storyboardName: Path.appForIcon.rawValue)
+        let configurator: AppForIconConfiguratorProtocol = AppForIconConfigurator()
+        configurator.configure(viewController: viewController,
+                               coordinator: self,
+                               servicesContainer: servicesContainer,
+                               image: image)
+        router.push(controller: viewController)
     }
 }
 

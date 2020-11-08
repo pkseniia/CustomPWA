@@ -23,7 +23,6 @@ extension RouterProtocol {
     }
 
     func present(controller: UIViewController, transitionStyle: UIModalTransitionStyle = .coverVertical) {
-        controller.modalPresentationStyle = .overCurrentContext
         controller.modalTransitionStyle = transitionStyle
         navigation.present(controller, animated: true)
     }

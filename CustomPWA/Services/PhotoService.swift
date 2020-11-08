@@ -1,5 +1,5 @@
 //
-//  GetPhotoService.swift
+//  PhotoService.swift
 //  CustomPWA
 //
 //  Created by Kseniia Poternak on 08.11.2020.
@@ -10,17 +10,21 @@ import UIKit
 
 typealias GetPhotoServiceResult = (Result<UIImage, Error>)
 
-protocol GetPhotoServiceProtocol {
+protocol PhotoServiceProtocol {
     func set(presentationController: UIViewController, delegate: ImagePickerDelegate)
-    func checkForAccess(completion: @escaping (Bool) -> Void)
-    func selectPhoto()
+    func checkForAccess(for type: PhotoServiceType, completion: @escaping () -> Void)
 }
 
 protocol ImagePickerDelegate: class {
     func didSelect(result: GetPhotoServiceResult)
 }
 
-class GetPhotoService: NSObject {
+enum PhotoServiceType {
+    case camera
+    case photoLibrary
+}
+
+class PhotoService: NSObject {
     
     private let pickerController: UIImagePickerController
     private weak var presentationController: UIViewController?
@@ -32,7 +36,7 @@ class GetPhotoService: NSObject {
         
         var errorDescription: String? {
             switch self {
-            case .unknownPickerError: return "Selected image is broken"
+            case .unknownPickerError: return Constants.Errors.imageIsBroken
             }
         }
     }
@@ -42,7 +46,18 @@ class GetPhotoService: NSObject {
         super.init()
         self.pickerController.delegate = self
         self.pickerController.mediaTypes = ["public.image"]
+        self.pickerController.allowsEditing = true
         
+    }
+    
+    private func takePhotoWithCamera() {
+        pickerController.sourceType = .camera
+        presentationController?.present(self.pickerController, animated: true)
+    }
+    
+    private func selectPhoto() {
+        pickerController.sourceType = .photoLibrary
+        presentationController?.present(self.pickerController, animated: true)
     }
     
     private func pickerController(_ controller: UIImagePickerController, didSelect image: UIImage?) {
@@ -55,7 +70,7 @@ class GetPhotoService: NSObject {
     }
 }
 
-extension GetPhotoService: UIImagePickerControllerDelegate {
+extension PhotoService: UIImagePickerControllerDelegate {
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         self.pickerController(picker, didSelect: nil)
@@ -63,7 +78,7 @@ extension GetPhotoService: UIImagePickerControllerDelegate {
     
     func imagePickerController(_ picker: UIImagePickerController,
                                didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
-        guard let image = info[.originalImage] as? UIImage else {
+        guard let image = info[UIImagePickerController.InfoKey.editedImage] as? UIImage else {
             delegate?.didSelect(result: .failure(PhotoManagerError.unknownPickerError))
             return self.pickerController(picker, didSelect: nil)
         }
@@ -71,36 +86,44 @@ extension GetPhotoService: UIImagePickerControllerDelegate {
     }
 }
 
-extension GetPhotoService: UINavigationControllerDelegate {
+extension PhotoService: UINavigationControllerDelegate {
 
 }
 
-extension GetPhotoService: GetPhotoServiceProtocol {
+extension PhotoService: PhotoServiceProtocol {
     
     func set(presentationController: UIViewController, delegate: ImagePickerDelegate) {
         self.presentationController = presentationController
         self.delegate = delegate
     }
     
-    func checkForAccess(completion: @escaping (Bool) -> Void) {
-        let status = PHPhotoLibrary.authorizationStatus()
-        if status == .notDetermined {
-            PHPhotoLibrary.requestAuthorization { status in
+    func checkForAccess(for type: PhotoServiceType, completion: @escaping () -> Void) {
+        switch type {
+        case .camera:
+            let authStatus = AVCaptureDevice.authorizationStatus(for: .video)
+            switch authStatus {
+            case .notDetermined, .authorized: takePhotoWithCamera()
+            default: completion()
+            }
+        case .photoLibrary:
+            let status = PHPhotoLibrary.authorizationStatus()
+            if status == .notDetermined {
+                PHPhotoLibrary.requestAuthorization { [weak self] status in
+                    guard let self = self else {
+                        completion()
+                        return
+                    }
+                    switch status {
+                    case .authorized, .limited: self.selectPhoto()
+                    default: break
+                    }
+                }
+            } else {
                 switch status {
-                case .authorized, .limited: completion(true)
-                default: break
+                case .authorized, .limited: selectPhoto()
+                default: completion()
                 }
             }
-        } else {
-            switch status {
-            case .authorized, .limited: completion(true)
-            default: completion(false)
-            }
         }
-    }
-    
-    func selectPhoto() {
-        pickerController.sourceType = .photoLibrary
-        presentationController?.present(self.pickerController, animated: true)
     }
 }

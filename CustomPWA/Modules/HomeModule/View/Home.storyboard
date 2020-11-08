@@ -32,7 +32,7 @@
                                             <constraint firstAttribute="width" secondItem="PSa-dg-sHh" secondAttribute="height" multiplier="1:0.4" id="dYa-r8-Arg"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="ProximaNova-Light" family="Proxima Nova" pointSize="17"/>
-                                        <state key="normal" title="Search for image">
+                                        <state key="normal" title="Take photo">
                                             <color key="titleColor" name="textColor"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -51,7 +51,7 @@
                                         <rect key="frame" x="0.0" y="93" width="207" height="83"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="ProximaNova-Light" family="Proxima Nova" pointSize="17"/>
-                                        <state key="normal" title="Get image from gallery">
+                                        <state key="normal" title="Open gallery">
                                             <color key="titleColor" name="textColor"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -80,7 +80,7 @@
                     </view>
                     <connections>
                         <outlet property="openGalleryButton" destination="iaG-ic-a8N" id="XrL-fV-Kh6"/>
-                        <outlet property="openSearchButton" destination="PSa-dg-sHh" id="NM2-M2-K0Y"/>
+                        <outlet property="takePhotoButton" destination="PSa-dg-sHh" id="eRJ-ei-lmr"/>
                         <outletCollection property="buttons" destination="PSa-dg-sHh" collectionClass="NSMutableArray" id="in1-mf-7j4"/>
                         <outletCollection property="buttons" destination="iaG-ic-a8N" collectionClass="NSMutableArray" id="EbP-9E-KrD"/>
                     </connections>

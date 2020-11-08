@@ -14,7 +14,7 @@ protocol HomeViewProtocol: ViewProtocol {
 class HomeViewController: BaseViewController {
 
     // MARK: - Outlets
-    @IBOutlet weak var openSearchButton: UIButton!
+    @IBOutlet weak var takePhotoButton: UIButton!
     @IBOutlet weak var openGalleryButton: UIButton!
     
     // MARK: - Properties
@@ -32,8 +32,8 @@ class HomeViewController: BaseViewController {
     override func buttonAction(_ sender: UIControl) -> Bool {
         if super.buttonAction(sender) { return true }
         switch sender {
-        case openSearchButton: presenter.openSearch()
-        case openGalleryButton: presenter.openGallery()
+        case takePhotoButton: presenter.checkForAccess(for: .camera)
+        case openGalleryButton: presenter.checkForAccess(for: .photoLibrary)
         default: return false
         }
         return true
@@ -42,8 +42,8 @@ class HomeViewController: BaseViewController {
     // MARK: - Privates
     private func setupUI() {
         initNavigation()
-        openSearchButton.setTitle(Constants.HomeScreen.openSearch, for: .normal)
-        openSearchButton.titleLabel?.numberOfLines = 0
+        takePhotoButton.setTitle(Constants.HomeScreen.takePhoto, for: .normal)
+        takePhotoButton.titleLabel?.numberOfLines = 0
         openGalleryButton.setTitle(Constants.HomeScreen.openGallery, for: .normal)
         openGalleryButton.titleLabel?.numberOfLines = 0
     }
