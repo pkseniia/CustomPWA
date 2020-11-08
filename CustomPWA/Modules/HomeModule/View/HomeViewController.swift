@@ -9,6 +9,7 @@ import UIKit
 
 protocol HomeViewProtocol: ViewProtocol {
     func openSettings()
+    func processError(message: String, completion: ((Bool) -> Void)?)
 }
 
 class HomeViewController: BaseViewController {
@@ -54,12 +55,19 @@ extension HomeViewController: HomeViewProtocol {
         title = Constants.HomeScreen.home
     }
     
+    func processError(message: String, completion: ((Bool) -> Void)?) {
+        showAlert(title: Constants.Errors.error,
+                  message: message,
+                  preferredStyle: .alert,
+                  cancelTitle: Constants.Buttons.cancel,
+                  confirmTitle: Constants.Buttons.ok,
+                  confirmStyle: .default,
+                  completion: completion)
+    }
+    
     func openSettings() {
-        // 🐰 alert
         ensureMainThread {
-            guard let settingsUrl = URL(string: UIApplication.openSettingsURLString) else {
-                return
-            }
+            guard let settingsUrl = URL(string: UIApplication.openSettingsURLString) else { return }
             if UIApplication.shared.canOpenURL(settingsUrl) {
                 UIApplication.shared.open(settingsUrl)
             }

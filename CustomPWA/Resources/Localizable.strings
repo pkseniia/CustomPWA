@@ -16,3 +16,9 @@
 
 /* Errors */
 "ERRORS_IMAGE_IS_BROKEN" = "Selected image is broken";
+"ERRORS_ERROR_TITLE" = "Error";
+"ERRORS_TURN_ON_THE_ACCESS_PLEASE" = "Turn on the access please";
+
+/* Buttons */
+"BUTTONS_CANCEL_BUTTON_TITLE" = "Cancel";
+"BUTTONS_OK_BUTTON_TITLE" = "Ok";

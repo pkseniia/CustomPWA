@@ -22,5 +22,12 @@ struct Constants {
     
     struct Errors {
         static let imageIsBroken = "ERRORS_IMAGE_IS_BROKEN".localized
+        static let error = "ERRORS_ERROR_TITLE".localized
+        static let giveAccessPlease = "ERRORS_TURN_ON_THE_ACCESS_PLEASE".localized
+    }
+    
+    struct Buttons {
+        static let cancel = "BUTTONS_CANCEL_BUTTON_TITLE".localized
+        static let ok = "BUTTONS_OK_BUTTON_TITLE".localized
     }
 }

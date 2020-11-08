@@ -40,8 +40,7 @@ class HomePresenter<View: HomeViewProtocol>: BasePresenter<View> {
             case .success(let image):
                 self.coordinator.pushIconForAppViewController(servicesContainer: self.servicesContainer, image: image)
             case .failure(let error):
-//                self.process(error: error)
-                print("🦊")
+                self.view.processError(message: error.localizedDescription, completion: nil)
             }
         }
     }
@@ -56,9 +55,11 @@ extension HomePresenter: HomePresenterProtocol {
     func checkForAccess(for type: PhotoServiceType) {
         selectImageUseCase.checkForAccess(for: type, completion: { [weak self] in
             guard let self = self else { return }
-            ensureMainThread {
-                self.view.openSettings()
-            }
+            self.view.processError(message: Constants.Errors.giveAccessPlease, completion: { success in
+                if success {
+                    self.view.openSettings()
+                }
+            })
         })
     }    
 }
