@@ -13,6 +13,9 @@
 
 /* AppForIcon */
 "APP_FOR_ICON_NAVIGATION_TITLE" = "Custom app";
+"APP_FOR_ICON_CHOOSE_APPLICATION_TITLE" = "Select app for icon";
+"APP_FOR_ICON_ENTER_APPLICATION_NAME_TITLE" = "Enter a name for app";
+"APP_FOR_ICON_CREATE_APP_BUTTON_TITLE" = "Create app";
 
 /* Errors */
 "ERRORS_IMAGE_IS_BROKEN" = "Selected image is broken";
@@ -22,3 +25,4 @@
 /* Buttons */
 "BUTTONS_CANCEL_BUTTON_TITLE" = "Cancel";
 "BUTTONS_OK_BUTTON_TITLE" = "Ok";
+"BUTTONS_DONE_BUTTON_TITLE" = "Done";

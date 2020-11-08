@@ -9,4 +9,5 @@ import Foundation
 
 enum ImagesName: String {
     case arrowLeft
+    case appleApp
 }

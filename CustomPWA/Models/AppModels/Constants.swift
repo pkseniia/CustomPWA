@@ -18,6 +18,9 @@ struct Constants {
     
     struct AppForIcon {
         static let customApp = "APP_FOR_ICON_NAVIGATION_TITLE".localized
+        static let chooseApplication = "APP_FOR_ICON_CHOOSE_APPLICATION_TITLE".localized
+        static let enterNameForApp = "APP_FOR_ICON_ENTER_APPLICATION_NAME_TITLE".localized
+        static let createApp = "APP_FOR_ICON_CREATE_APP_BUTTON_TITLE".localized
     }
     
     struct Errors {
@@ -29,5 +32,6 @@ struct Constants {
     struct Buttons {
         static let cancel = "BUTTONS_CANCEL_BUTTON_TITLE".localized
         static let ok = "BUTTONS_OK_BUTTON_TITLE".localized
+        static let done = "BUTTONS_DONE_BUTTON_TITLE".localized
     }
 }
