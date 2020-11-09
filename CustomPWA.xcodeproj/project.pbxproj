@@ -25,6 +25,17 @@
 		3607034225587BE1001C8205 /* AppNameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3607034025587BE1001C8205 /* AppNameTableViewCell.xib */; };
 		3607034625587BEC001C8205 /* AppNameTableViewCellObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3607034525587BEC001C8205 /* AppNameTableViewCellObject.swift */; };
 		3607035A25588277001C8205 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3607035925588277001C8205 /* UITableViewExtension.swift */; };
+		360703632558894E001C8205 /* AppsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360703622558894E001C8205 /* AppsListViewController.swift */; };
+		3607036625588957001C8205 /* AppsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3607036525588957001C8205 /* AppsListPresenter.swift */; };
+		3607036925588964001C8205 /* AppsListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3607036825588964001C8205 /* AppsListConfigurator.swift */; };
+		3607036C2558896F001C8205 /* AppsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3607036B2558896F001C8205 /* AppsList.storyboard */; };
+		3607037325588BCC001C8205 /* AppNameEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3607037025588BCC001C8205 /* AppNameEntity.swift */; };
+		3607037425588BCC001C8205 /* ExternalAppEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3607037125588BCC001C8205 /* ExternalAppEntity.swift */; };
+		3607037525588BCC001C8205 /* ItunesAppEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3607037225588BCC001C8205 /* ItunesAppEntity.swift */; };
+		360703792558A61D001C8205 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360703782558A61D001C8205 /* NetworkService.swift */; };
+		3607037D2558A6DC001C8205 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3607037C2558A6DC001C8205 /* Reachability.swift */; };
+		360703812558A70C001C8205 /* ItunesAppInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360703802558A70C001C8205 /* ItunesAppInput.swift */; };
+		360703852558A731001C8205 /* CustomPWAAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360703842558A731001C8205 /* CustomPWAAPI.swift */; };
 		36D3798325571A6B000D6967 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D3798225571A6B000D6967 /* AppDelegate.swift */; };
 		36D3798C25571A6E000D6967 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36D3798B25571A6E000D6967 /* Assets.xcassets */; };
 		36D3798F25571A6E000D6967 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36D3798D25571A6E000D6967 /* LaunchScreen.storyboard */; };
@@ -84,6 +95,17 @@
 		3607034025587BE1001C8205 /* AppNameTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppNameTableViewCell.xib; sourceTree = "<group>"; };
 		3607034525587BEC001C8205 /* AppNameTableViewCellObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNameTableViewCellObject.swift; sourceTree = "<group>"; };
 		3607035925588277001C8205 /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		360703622558894E001C8205 /* AppsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsListViewController.swift; sourceTree = "<group>"; };
+		3607036525588957001C8205 /* AppsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsListPresenter.swift; sourceTree = "<group>"; };
+		3607036825588964001C8205 /* AppsListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsListConfigurator.swift; sourceTree = "<group>"; };
+		3607036B2558896F001C8205 /* AppsList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AppsList.storyboard; sourceTree = "<group>"; };
+		3607037025588BCC001C8205 /* AppNameEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppNameEntity.swift; sourceTree = "<group>"; };
+		3607037125588BCC001C8205 /* ExternalAppEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExternalAppEntity.swift; sourceTree = "<group>"; };
+		3607037225588BCC001C8205 /* ItunesAppEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItunesAppEntity.swift; sourceTree = "<group>"; };
+		360703782558A61D001C8205 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		3607037C2558A6DC001C8205 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		360703802558A70C001C8205 /* ItunesAppInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesAppInput.swift; sourceTree = "<group>"; };
+		360703842558A731001C8205 /* CustomPWAAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPWAAPI.swift; sourceTree = "<group>"; };
 		36D3797F25571A6B000D6967 /* CustomPWA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomPWA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36D3798225571A6B000D6967 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36D3798B25571A6E000D6967 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -223,6 +245,61 @@
 			path = AppNameCell;
 			sourceTree = "<group>";
 		};
+		3607035F25588913001C8205 /* AppsListModule */ = {
+			isa = PBXGroup;
+			children = (
+				3607036025588929001C8205 /* Core */,
+				3607036125588930001C8205 /* View */,
+			);
+			path = AppsListModule;
+			sourceTree = "<group>";
+		};
+		3607036025588929001C8205 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		3607036125588930001C8205 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				360703622558894E001C8205 /* AppsListViewController.swift */,
+				3607036525588957001C8205 /* AppsListPresenter.swift */,
+				3607036825588964001C8205 /* AppsListConfigurator.swift */,
+				3607036B2558896F001C8205 /* AppsList.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3607036F25588BBD001C8205 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				3607037025588BCC001C8205 /* AppNameEntity.swift */,
+				3607037125588BCC001C8205 /* ExternalAppEntity.swift */,
+				3607037225588BCC001C8205 /* ItunesAppEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		360703772558A5E6001C8205 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				360703782558A61D001C8205 /* NetworkService.swift */,
+				360703842558A731001C8205 /* CustomPWAAPI.swift */,
+				3607037C2558A6DC001C8205 /* Reachability.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		3607037F2558A701001C8205 /* Inputs */ = {
+			isa = PBXGroup;
+			children = (
+				360703802558A70C001C8205 /* ItunesAppInput.swift */,
+			);
+			path = Inputs;
+			sourceTree = "<group>";
+		};
 		36D3797625571A6B000D6967 = {
 			isa = PBXGroup;
 			children = (
@@ -293,6 +370,7 @@
 				36D379FF25573473000D6967 /* Base */,
 				36D379FB25573337000D6967 /* HomeModule */,
 				360702FC25585F5A001C8205 /* AppForIconModule */,
+				3607035F25588913001C8205 /* AppsListModule */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -379,7 +457,9 @@
 		36D379E9255730A5000D6967 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3607037F2558A701001C8205 /* Inputs */,
 				36D379EA255730B4000D6967 /* AppModels */,
+				3607036F25588BBD001C8205 /* Entities */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -415,6 +495,7 @@
 		36D37A112557386E000D6967 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				360703772558A5E6001C8205 /* Networking */,
 				36D37A1225573889000D6967 /* ServicesContainer.swift */,
 				36D37A2225573DB2000D6967 /* StartService.swift */,
 				36D37A3025576975000D6967 /* PhotoService.swift */,
@@ -507,6 +588,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36D379AA25571F64000D6967 /* Colors.xcassets in Resources */,
+				3607036C2558896F001C8205 /* AppsList.storyboard in Resources */,
 				3607030825585FFF001C8205 /* AppForIcon.storyboard in Resources */,
 				3607034225587BE1001C8205 /* AppNameTableViewCell.xib in Resources */,
 				36D379E725573041000D6967 /* ProximaNova-Light.ttf in Resources */,
@@ -532,6 +614,8 @@
 				36D37A032557349F000D6967 /* BasePresenter.swift in Sources */,
 				36D37A0A2557376B000D6967 /* CoordinatorProtocol.swift in Sources */,
 				36D379AF2557227E000D6967 /* AppCoordinator.swift in Sources */,
+				360703812558A70C001C8205 /* ItunesAppInput.swift in Sources */,
+				3607037525588BCC001C8205 /* ItunesAppEntity.swift in Sources */,
 				36D379D425572537000D6967 /* RouterProtocol.swift in Sources */,
 				36D37A2A255740AD000D6967 /* StringExtension.swift in Sources */,
 				36D37A0D25573810000D6967 /* HomeConfigurator.swift in Sources */,
@@ -541,26 +625,34 @@
 				360702EB25580F75001C8205 /* GetImageForAppUseCase.swift in Sources */,
 				3607033425587A21001C8205 /* AppIconTableViewCell.swift in Sources */,
 				3607030225585F9A001C8205 /* AppForIconPresenter.swift in Sources */,
+				3607037325588BCC001C8205 /* AppNameEntity.swift in Sources */,
 				36D37A2625574059000D6967 /* Constants.swift in Sources */,
 				3607030525585FA9001C8205 /* AppForIconConfigurator.swift in Sources */,
 				36070329255878F0001C8205 /* CreateAppModelUseCase.swift in Sources */,
+				3607037425588BCC001C8205 /* ExternalAppEntity.swift in Sources */,
 				36D37A2325573DB2000D6967 /* StartService.swift in Sources */,
 				36D379D8255725BE000D6967 /* CustomNavigationController.swift in Sources */,
+				360703852558A731001C8205 /* CustomPWAAPI.swift in Sources */,
 				36D379D025572502000D6967 /* HomeRouter.swift in Sources */,
+				360703792558A61D001C8205 /* NetworkService.swift in Sources */,
 				360702FE25585F8F001C8205 /* AppForIconViewController.swift in Sources */,
 				36D379F6255732AA000D6967 /* ImagesEnum.swift in Sources */,
 				36D37A022557349F000D6967 /* BaseViewController.swift in Sources */,
 				36D3798325571A6B000D6967 /* AppDelegate.swift in Sources */,
 				36D379F9255732DA000D6967 /* UIImageExtension.swift in Sources */,
 				36D37A2025573C81000D6967 /* NavigationInitProtocol.swift in Sources */,
+				360703632558894E001C8205 /* AppsListViewController.swift in Sources */,
 				3607032625587849001C8205 /* IconForAppCellObjectProtocol.swift in Sources */,
 				36D379C825572425000D6967 /* UIViewControllerExtension.swift in Sources */,
 				3607035A25588277001C8205 /* UITableViewExtension.swift in Sources */,
 				36D379DC25572679000D6967 /* UIColorExtension.swift in Sources */,
 				36D379FD2557336F000D6967 /* HomeViewController.swift in Sources */,
 				3607031B255875DE001C8205 /* CellObjectConfigurable.swift in Sources */,
+				3607036625588957001C8205 /* AppsListPresenter.swift in Sources */,
 				3607033825587A2E001C8205 /* AppIconTableViewCellObject.swift in Sources */,
+				3607037D2558A6DC001C8205 /* Reachability.swift in Sources */,
 				36D37A17255739FE000D6967 /* HomeCoordinator.swift in Sources */,
+				3607036925588964001C8205 /* AppsListConfigurator.swift in Sources */,
 				36D37A0725573660000D6967 /* HomePresenter.swift in Sources */,
 				3607034625587BEC001C8205 /* AppNameTableViewCellObject.swift in Sources */,
 				3607031F255876B6001C8205 /* CellRenewable.swift in Sources */,
@@ -711,13 +803,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J2FU8V9J87;
+				DEVELOPMENT_TEAM = ZP8CKA824H;
 				INFOPLIST_FILE = "CustomPWA//Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pkseniia.CustomPWA;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pkseniia.CustomPWA.n;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -729,8 +821,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J2FU8V9J87;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "CustomPWA//Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -738,6 +830,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pkseniia.CustomPWA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

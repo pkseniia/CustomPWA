@@ -19,22 +19,27 @@ class AppForIconPresenter<View: AppForIconViewProtocol>: BasePresenter<View> {
     private let coordinator: CoordinatorProtocol
     private let servicesContainer: ServicesContainerProtocol
     private let getImageForAppUseCase: GetImageForAppUseCaseProtocol
+    private let createAppEntityUseCase: CreateAppEntityUseCaseProtocol
     
     private var dataSource: [IconForAppCellObjectProtocol] = []
     
     init(view: View,
          coordinator: CoordinatorProtocol,
          servicesContainer: ServicesContainerProtocol,
-         getImageForAppUseCase: GetImageForAppUseCaseProtocol) {
+         getImageForAppUseCase: GetImageForAppUseCaseProtocol,
+         createAppEntityUseCase: CreateAppEntityUseCaseProtocol) {
         self.coordinator = coordinator
         self.servicesContainer = servicesContainer
         self.getImageForAppUseCase = getImageForAppUseCase
+        self.createAppEntityUseCase = createAppEntityUseCase
         super.init(view: view)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.setImage(with: getImageForAppUseCase.getImage())
+        let image = getImageForAppUseCase.getImage()
+        view.setImage(with: image)
+        createAppEntityUseCase.setCustomImage(image: image)
         fillDataSource()
     }
     
@@ -55,8 +60,14 @@ class AppForIconPresenter<View: AppForIconViewProtocol>: BasePresenter<View> {
     }
     
     private func updateName(with name: String?) {
-//        createAppEntity.title = name
-//        view.enableCreateIconButton(with: createAppEntity.checkIfEntityIsReady())
+        createAppEntityUseCase.setName(name: name)
+        view.enableCreateAppButton(with: createAppEntityUseCase.checkIfEntityIsReady())
+    }
+    
+    private func setSchema(with entity: ExternalAppEntity) {
+        createAppEntityUseCase.set(originalTitle: entity.name?.name, originalImage: entity.image, schema: entity.schema)
+        fillDataSource(entity: createAppEntityUseCase.getCurrentEntity())
+        view.enableCreateAppButton(with: createAppEntityUseCase.checkIfEntityIsReady())
     }
 }
 
@@ -70,7 +81,8 @@ extension AppForIconPresenter: AppForIconPresenterProtocol {
     }
     
     func pushSelectAppScreen() {
-        print("pushSelectAppScreen")
+        coordinator.pushAppsListViewController(servicesContainer: servicesContainer,
+                                               selectCallBack: { [weak self] selectedApp in self?.setSchema(with: selectedApp) })
     }
     
     func createApp() {

@@ -17,11 +17,19 @@ class CustomAppEntity {
     
     init() {}
     
-//    func set(originalTitle: String?, originalImage: UIImage?, schema: String) {
-//        self.originalTitle = originalTitle
-//        self.schema = schema
-//        self.originalImage = originalImage
-//    }
+    func setCustomImage(image: UIImage) {
+        self.image = image
+    }
+    
+    func setName(name: String?) {
+        self.title = name
+    }
+    
+    func set(originalTitle: String?, originalImage: UIImage?, schema: String) {
+        self.originalTitle = originalTitle
+        self.schema = schema
+        self.originalImage = originalImage
+    }
     
     func checkIfEntityIsReady() -> Bool {
         if let title = title, !title.isEmpty, image != nil, schema != nil {

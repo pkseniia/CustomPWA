@@ -17,10 +17,14 @@
 "APP_FOR_ICON_ENTER_APPLICATION_NAME_TITLE" = "Enter a name for app";
 "APP_FOR_ICON_CREATE_APP_BUTTON_TITLE" = "Create app";
 
+/* AppsList */
+"APPS_LIST_NAVIGATION_TITLE" = "Apps list";
+
 /* Errors */
 "ERRORS_IMAGE_IS_BROKEN" = "Selected image is broken";
 "ERRORS_ERROR_TITLE" = "Error";
 "ERRORS_TURN_ON_THE_ACCESS_PLEASE" = "Turn on the access please";
+"ERRORS_NO_INTERNET" = "No internet connection";
 
 /* Buttons */
 "BUTTONS_CANCEL_BUTTON_TITLE" = "Cancel";

@@ -20,10 +20,12 @@ class AppForIconConfigurator: AppForIconConfiguratorProtocol {
                    servicesContainer: ServicesContainerProtocol,
                    image: UIImage) {
         let getImageForAppUseCase = GetImageForAppUseCase(image: image)
+        let createAppEntityUseCase = CreateAppEntityUseCase()
         let appForIconPresenter = AppForIconPresenter(view: viewController,
                                           coordinator: coordinator,
                                           servicesContainer: servicesContainer,
-                                          getImageForAppUseCase: getImageForAppUseCase)
+                                          getImageForAppUseCase: getImageForAppUseCase,
+                                          createAppEntityUseCase: createAppEntityUseCase)
         viewController.presenter = appForIconPresenter
     }
 }

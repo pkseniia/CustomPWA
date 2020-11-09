@@ -19,6 +19,7 @@ class HomeCoordinator {
     private enum Path: String {
         case home = "Home"
         case appForIcon = "AppForIcon"
+        case appsList = "AppsList"
     }
 
     func initializeStartController(servicesContainer: ServicesContainerProtocol) ->
@@ -45,6 +46,16 @@ class HomeCoordinator {
                                coordinator: self,
                                servicesContainer: servicesContainer,
                                image: image)
+        router.push(controller: viewController)
+    }
+    
+    func pushAppsListViewController(servicesContainer: ServicesContainerProtocol, selectCallBack: @escaping SelectAppCallBack) {
+        let viewController = AppsListViewController.instantiate(storyboardName: Path.appsList.rawValue)
+        let configurator: AppsListConfiguratorProtocol = AppsListConfigurator()
+        configurator.configure(viewController: viewController,
+                               coordinator: self,
+                               servicesContainer: servicesContainer,
+                               selectCallBack: selectCallBack)
         router.push(controller: viewController)
     }
 }
