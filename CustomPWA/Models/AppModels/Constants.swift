@@ -27,6 +27,13 @@ struct Constants {
         static let appsList = "APPS_LIST_NAVIGATION_TITLE".localized
     }
     
+    struct HTMLTitles {
+        static let header = "HTML_HEADER".localized
+        static let tap = "HTML_TAP_PART_1".localized
+        static let atTheBottom = "HTML_TAP_PART_2".localized
+        static let selectAddToHome = "HTML_SELECT_ADD_TO_HOME_SCREEN".localized
+    }
+    
     struct Errors {
         static let imageIsBroken = "ERRORS_IMAGE_IS_BROKEN".localized
         static let error = "ERRORS_ERROR_TITLE".localized

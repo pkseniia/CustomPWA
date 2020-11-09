@@ -21,6 +21,8 @@ class AppForIconPresenter<View: AppForIconViewProtocol>: BasePresenter<View> {
     private let getImageForAppUseCase: GetImageForAppUseCaseProtocol
     private let createAppEntityUseCase: CreateAppEntityUseCaseProtocol
     
+    private let pwaCreator: PWACreatorProtocol
+    
     private var dataSource: [IconForAppCellObjectProtocol] = []
     
     init(view: View,
@@ -32,6 +34,7 @@ class AppForIconPresenter<View: AppForIconViewProtocol>: BasePresenter<View> {
         self.servicesContainer = servicesContainer
         self.getImageForAppUseCase = getImageForAppUseCase
         self.createAppEntityUseCase = createAppEntityUseCase
+        self.pwaCreator = PWACreator()
         super.init(view: view)
     }
     
@@ -86,7 +89,14 @@ extension AppForIconPresenter: AppForIconPresenterProtocol {
     }
     
     func createApp() {
-        print("createApp")
+        let entity = createAppEntityUseCase.getCurrentEntity()
+        view.showIndicator(value: true)
+        DispatchQueue.global(qos: .userInitiated).async { [weak self] in
+            guard let self = self else { return }
+            self.pwaCreator.openLocalSafariHTML(with: entity) {
+                self.view.showIndicator(value: false)
+            }
+        }
     }
 }
 

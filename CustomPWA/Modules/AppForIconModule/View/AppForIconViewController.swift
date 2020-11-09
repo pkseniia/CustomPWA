@@ -11,6 +11,7 @@ protocol AppForIconViewProtocol: ViewProtocol {
     func setImage(with image: UIImage)
     func reloadTableView()
     func enableCreateAppButton(with value: Bool)
+    func showIndicator(value: Bool)
 }
 
 class AppForIconViewController: BaseViewController {
@@ -22,6 +23,7 @@ class AppForIconViewController: BaseViewController {
     
     // MARK: - Properties
     var presenter: AppForIconPresenterProtocol!
+    var activityIndicator: CustomActivityIndicator?
 
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -49,6 +51,7 @@ class AppForIconViewController: BaseViewController {
         hideKeyboardWhenTappedAround()
         enableCreateAppButton(with: false)
         createAppButton.setTitle(Constants.AppForIcon.createApp, for: .normal)
+        activityIndicator = CustomActivityIndicator(frame: view.bounds)
     }
 }
 
@@ -101,5 +104,11 @@ extension AppForIconViewController: AppForIconViewProtocol {
     
     func reloadTableView() {
         tableView.reloadData()
+    }
+    
+    func showIndicator(value: Bool) {
+        value ?
+            activityIndicator?.startAnimating() :
+            activityIndicator?.stopAnimating()
     }
 }

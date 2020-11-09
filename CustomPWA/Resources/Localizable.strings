@@ -20,6 +20,12 @@
 /* AppsList */
 "APPS_LIST_NAVIGATION_TITLE" = "Apps list";
 
+/* HTMLTitles */
+"HTML_HEADER" ="Tap Add Icon to Home Screen";
+"HTML_TAP_PART_1" = "Tap";
+"HTML_TAP_PART_2" = "at the bottom of the screen";
+"HTML_SELECT_ADD_TO_HOME_SCREEN" = "Select \"Add to Home Screen\" from the drop-down menu";
+
 /* Errors */
 "ERRORS_IMAGE_IS_BROKEN" = "Selected image is broken";
 "ERRORS_ERROR_TITLE" = "Error";

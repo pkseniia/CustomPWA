@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -36,6 +36,15 @@
 		3607037D2558A6DC001C8205 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3607037C2558A6DC001C8205 /* Reachability.swift */; };
 		360703812558A70C001C8205 /* ItunesAppInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360703802558A70C001C8205 /* ItunesAppInput.swift */; };
 		360703852558A731001C8205 /* CustomPWAAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360703842558A731001C8205 /* CustomPWAAPI.swift */; };
+		3607038D2558BFAF001C8205 /* CustomActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3607038C2558BFAF001C8205 /* CustomActivityIndicator.swift */; };
+		360703922558BFD6001C8205 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360703912558BFD6001C8205 /* BaseView.swift */; };
+		360703952558BFFE001C8205 /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360703942558BFFE001C8205 /* UIApplicationExtension.swift */; };
+		360703982558C0EA001C8205 /* PWAService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360703972558C0EA001C8205 /* PWAService.swift */; };
+		3607039C2558C11F001C8205 /* Swifter in Frameworks */ = {isa = PBXBuildFile; productRef = 3607039B2558C11F001C8205 /* Swifter */; };
+		3607039F2558C146001C8205 /* HttpServerPWA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3607039E2558C146001C8205 /* HttpServerPWA.swift */; };
+		360703A42558C184001C8205 /* IphoneFrameEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360703A32558C183001C8205 /* IphoneFrameEnum.swift */; };
+		360703A72558C1AB001C8205 /* IphoneSplashImagesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360703A62558C1AB001C8205 /* IphoneSplashImagesModel.swift */; };
+		360703AA2558C421001C8205 /* UIView+Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360703A92558C421001C8205 /* UIView+Pin.swift */; };
 		36D3798325571A6B000D6967 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D3798225571A6B000D6967 /* AppDelegate.swift */; };
 		36D3798C25571A6E000D6967 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36D3798B25571A6E000D6967 /* Assets.xcassets */; };
 		36D3798F25571A6E000D6967 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36D3798D25571A6E000D6967 /* LaunchScreen.storyboard */; };
@@ -106,6 +115,14 @@
 		3607037C2558A6DC001C8205 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		360703802558A70C001C8205 /* ItunesAppInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesAppInput.swift; sourceTree = "<group>"; };
 		360703842558A731001C8205 /* CustomPWAAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPWAAPI.swift; sourceTree = "<group>"; };
+		3607038C2558BFAF001C8205 /* CustomActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomActivityIndicator.swift; sourceTree = "<group>"; };
+		360703912558BFD6001C8205 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		360703942558BFFE001C8205 /* UIApplicationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
+		360703972558C0EA001C8205 /* PWAService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWAService.swift; sourceTree = "<group>"; };
+		3607039E2558C146001C8205 /* HttpServerPWA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpServerPWA.swift; sourceTree = "<group>"; };
+		360703A32558C183001C8205 /* IphoneFrameEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IphoneFrameEnum.swift; sourceTree = "<group>"; };
+		360703A62558C1AB001C8205 /* IphoneSplashImagesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IphoneSplashImagesModel.swift; sourceTree = "<group>"; };
+		360703A92558C421001C8205 /* UIView+Pin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Pin.swift"; sourceTree = "<group>"; };
 		36D3797F25571A6B000D6967 /* CustomPWA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomPWA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36D3798225571A6B000D6967 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36D3798B25571A6E000D6967 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -153,6 +170,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3607039C2558C11F001C8205 /* Swifter in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +318,24 @@
 			path = Inputs;
 			sourceTree = "<group>";
 		};
+		3607038B2558BFA2001C8205 /* UIElements */ = {
+			isa = PBXGroup;
+			children = (
+				360703912558BFD6001C8205 /* BaseView.swift */,
+				3607038C2558BFAF001C8205 /* CustomActivityIndicator.swift */,
+			);
+			path = UIElements;
+			sourceTree = "<group>";
+		};
+		360703A12558C14A001C8205 /* PWA */ = {
+			isa = PBXGroup;
+			children = (
+				360703972558C0EA001C8205 /* PWAService.swift */,
+				3607039E2558C146001C8205 /* HttpServerPWA.swift */,
+			);
+			path = PWA;
+			sourceTree = "<group>";
+		};
 		36D3797625571A6B000D6967 = {
 			isa = PBXGroup;
 			children = (
@@ -408,6 +444,7 @@
 			isa = PBXGroup;
 			children = (
 				36D379C62557240C000D6967 /* Extensions */,
+				3607038B2558BFA2001C8205 /* UIElements */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -424,6 +461,8 @@
 				36D37A29255740AD000D6967 /* StringExtension.swift */,
 				3607033A25587A4F001C8205 /* NSObjectExtension.swift */,
 				3607035925588277001C8205 /* UITableViewExtension.swift */,
+				360703942558BFFE001C8205 /* UIApplicationExtension.swift */,
+				360703A92558C421001C8205 /* UIView+Pin.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -470,6 +509,8 @@
 				36D37A2525574059000D6967 /* Constants.swift */,
 				36D379EB255730C7000D6967 /* FontEnum.swift */,
 				36D379F5255732AA000D6967 /* ImagesEnum.swift */,
+				360703A32558C183001C8205 /* IphoneFrameEnum.swift */,
+				360703A62558C1AB001C8205 /* IphoneSplashImagesModel.swift */,
 			);
 			path = AppModels;
 			sourceTree = "<group>";
@@ -499,6 +540,7 @@
 				36D37A1225573889000D6967 /* ServicesContainer.swift */,
 				36D37A2225573DB2000D6967 /* StartService.swift */,
 				36D37A3025576975000D6967 /* PhotoService.swift */,
+				360703A12558C14A001C8205 /* PWA */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -546,6 +588,9 @@
 			dependencies = (
 			);
 			name = CustomPWA;
+			packageProductDependencies = (
+				3607039B2558C11F001C8205 /* Swifter */,
+			);
 			productName = CustomPWA;
 			productReference = 36D3797F25571A6B000D6967 /* CustomPWA.app */;
 			productType = "com.apple.product-type.application";
@@ -573,6 +618,9 @@
 				Base,
 			);
 			mainGroup = 36D3797625571A6B000D6967;
+			packageReferences = (
+				3607039A2558C11F001C8205 /* XCRemoteSwiftPackageReference "swifter" */,
+			);
 			productRefGroup = 36D3798025571A6B000D6967 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -617,13 +665,18 @@
 				360703812558A70C001C8205 /* ItunesAppInput.swift in Sources */,
 				3607037525588BCC001C8205 /* ItunesAppEntity.swift in Sources */,
 				36D379D425572537000D6967 /* RouterProtocol.swift in Sources */,
+				360703A42558C184001C8205 /* IphoneFrameEnum.swift in Sources */,
 				36D37A2A255740AD000D6967 /* StringExtension.swift in Sources */,
+				3607038D2558BFAF001C8205 /* CustomActivityIndicator.swift in Sources */,
 				36D37A0D25573810000D6967 /* HomeConfigurator.swift in Sources */,
 				3607033B25587A4F001C8205 /* NSObjectExtension.swift in Sources */,
 				36D37A3725576B86000D6967 /* SelectImageUseCase.swift in Sources */,
 				36D379EC255730C7000D6967 /* FontEnum.swift in Sources */,
 				360702EB25580F75001C8205 /* GetImageForAppUseCase.swift in Sources */,
 				3607033425587A21001C8205 /* AppIconTableViewCell.swift in Sources */,
+				360703952558BFFE001C8205 /* UIApplicationExtension.swift in Sources */,
+				3607039F2558C146001C8205 /* HttpServerPWA.swift in Sources */,
+				360703982558C0EA001C8205 /* PWAService.swift in Sources */,
 				3607030225585F9A001C8205 /* AppForIconPresenter.swift in Sources */,
 				3607037325588BCC001C8205 /* AppNameEntity.swift in Sources */,
 				36D37A2625574059000D6967 /* Constants.swift in Sources */,
@@ -648,6 +701,9 @@
 				36D379DC25572679000D6967 /* UIColorExtension.swift in Sources */,
 				36D379FD2557336F000D6967 /* HomeViewController.swift in Sources */,
 				3607031B255875DE001C8205 /* CellObjectConfigurable.swift in Sources */,
+				360703A72558C1AB001C8205 /* IphoneSplashImagesModel.swift in Sources */,
+				360703AA2558C421001C8205 /* UIView+Pin.swift in Sources */,
+				360703922558BFD6001C8205 /* BaseView.swift in Sources */,
 				3607036625588957001C8205 /* AppsListPresenter.swift in Sources */,
 				3607033825587A2E001C8205 /* AppIconTableViewCellObject.swift in Sources */,
 				3607037D2558A6DC001C8205 /* Reachability.swift in Sources */,
@@ -858,6 +914,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3607039A2558C11F001C8205 /* XCRemoteSwiftPackageReference "swifter" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/httpswift/swifter.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3607039B2558C11F001C8205 /* Swifter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3607039A2558C11F001C8205 /* XCRemoteSwiftPackageReference "swifter" */;
+			productName = Swifter;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 36D3797725571A6B000D6967 /* Project object */;
 }
