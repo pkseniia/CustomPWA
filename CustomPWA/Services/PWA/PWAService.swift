@@ -77,8 +77,8 @@ class PWACreator: PWACreatorProtocol {
             try server.start(port)
             print("Server has started ( port = \(try server.port()) ). Try to connect now...")
             guard let shortcutUrl = URL(string: "http://localhost:\(port)/") else { return }
-            completion()
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                completion()
                 UIApplication.shared.open(shortcutUrl)
             }
         } catch SocketError.bindFailed(let message) where message == "Address already in use" {

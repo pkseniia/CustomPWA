@@ -51,13 +51,19 @@ class PhotoService: NSObject {
     }
     
     private func takePhotoWithCamera() {
-        pickerController.sourceType = .camera
-        presentationController?.present(self.pickerController, animated: true)
+        ensureMainThread { [weak self] in
+            guard let self = self else { return }
+            self.pickerController.sourceType = .camera
+            self.presentationController?.present(self.pickerController, animated: true)
+        }
     }
     
     private func selectPhoto() {
-        pickerController.sourceType = .photoLibrary
-        presentationController?.present(self.pickerController, animated: true)
+        ensureMainThread { [weak self] in
+            guard let self = self else { return }
+            self.pickerController.sourceType = .photoLibrary
+            self.presentationController?.present(self.pickerController, animated: true)
+        }
     }
     
     private func pickerController(_ controller: UIImagePickerController, didSelect image: UIImage?) {
