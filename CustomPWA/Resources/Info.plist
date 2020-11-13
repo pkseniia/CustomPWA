@@ -124,7 +124,6 @@
 		<string>Forest</string>
 		<string>Alook</string>
 		<string>yelp4</string>
-		<string>snssdk1233</string>
 		<string>pinduoduo</string>
 		<string>tmri12123</string>
 		<string>dewuapp</string>
@@ -226,9 +225,7 @@
 		<string>citymapper</string>
 		<string>viber</string>
 		<string>app</string>
-		<string>badoo</string>
 		<string>tinder</string>
-		<string>uklon</string>
 		<string>bolt</string>
 		<string>privat24</string>
 		<string>glovo</string>
@@ -236,6 +233,7 @@
 		<string>foursquare</string>
 		<string>shazam</string>
 		<string>linkedin</string>
+		<string>musically</string>
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
