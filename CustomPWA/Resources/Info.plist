@@ -33,7 +33,7 @@
 		<string>shoebox</string>
 		<string>applenewss</string>
 		<string>mqqiapi</string>
-		<string>weixin://dl/scan</string>
+		<string>weixin</string>
 		<string>alipays</string>
 		<string>taobao</string>
 		<string>openApp.jdMobile</string>
@@ -48,16 +48,16 @@
 		<string>youtube</string>
 		<string>fb-messenger</string>
 		<string>twitter</string>
-		<string>snapchatp</string>
+		<string>snapchat</string>
 		<string>tg</string>
 		<string>googlephotos</string>
 		<string>line</string>
 		<string>comgooglemaps</string>
-		<string>kakaokompassauth</string>
+		<string>kakaoopen</string>
 		<string>nflx</string>
 		<string>sms</string>
-		<string>app://airbnb</string>
 		<string>prefs</string>
+		<string>airbnb</string>
 		<string>bilibili</string>
 		<string>baiduyun</string>
 		<string>baidumap</string>
@@ -98,20 +98,20 @@
 		<string>zhihu</string>
 		<string>weishiiosscheme</string>
 		<string>weibointernational</string>
-		<string>amazonToAlipay</string>
+		<string>com.amazon.mobile.shopping</string>
 		<string>spotify</string>
 		<string>googlechrome</string>
-		<string>pinterest://user/apple</string>
+		<string>pinterest</string>
 		<string>paypal</string>
 		<string>dbapi-1</string>
-		<string>ymail://mail/compose</string>
+		<string>ymail</string>
 		<string>imovie</string>
 		<string>linemusic</string>
 		<string>skssdk1372</string>
 		<string>picsart</string>
 		<string>twitterkit-5GCMCsPEKdX9EME6ukXZLIdi9</string>
 		<string>wxa427cc47ce632290</string>
-		<string>amazon</string>
+		<string>aiv</string>
 		<string>timetree</string>
 		<string>mangaup</string>
 		<string>amb7208821cocotsure</string>
@@ -149,7 +149,7 @@
 		<string>qqnews</string>
 		<string>wb2982475902</string>
 		<string>brawlstars-cn</string>
-		<string>minecraft:?edu=1</string>
+		<string>minecraft</string>
 		<string>baidutranslate</string>
 		<string>wx2654d9155d70a468</string>
 		<string>cmbmobilebank</string>
@@ -158,7 +158,7 @@
 		<string>neteasemail</string>
 		<string>zoomus</string>
 		<string>uber</string>
-		<string>tumblr://x-callback-url/blog?blogName=myblog</string>
+		<string>tumblr</string>
 		<string>tim</string>
 		<string>evernote</string>
 		<string>simplemind</string>
@@ -169,25 +169,25 @@
 		<string>goodreads</string>
 		<string>nplayer-http</string>
 		<string>QQ6119B19</string>
-		<string>AVPlayer</string>
 		<string>zakeriphone</string>
 		<string>pcalc</string>
 		<string>skype</string>
-		<string>tvqs</string>
+		<string>tvcontrol1</string>
 		<string>onepassword</string>
 		<string>achievement</string>
 		<string>waze</string>
 		<string>vsco</string>
-		<string>vimeo://app.vimeo.com/videos/33881529</string>
+		<string>vimeo</string>
 		<string>tweetbot</string>
 		<string>twitch</string>
+		<string>steller</string>
 		<string>speedtest</string>
 		<string>sgnl</string>
 		<string>photoscan</string>
 		<string>litely</string>
 		<string>launch</string>
 		<string>lastpass</string>
-		<string>imdb://title/tt3569230</string>
+		<string>imdb</string>
 		<string>hulu</string>
 		<string>hbomax</string>
 		<string>hbogo</string>
@@ -224,8 +224,18 @@
 		<string>garageband</string>
 		<string>hyperlapse</string>
 		<string>citymapper</string>
-		<string>fonts.app</string>
 		<string>viber</string>
+		<string>app</string>
+		<string>badoo</string>
+		<string>tinder</string>
+		<string>uklon</string>
+		<string>bolt</string>
+		<string>privat24</string>
+		<string>glovo</string>
+		<string>blablacar</string>
+		<string>foursquare</string>
+		<string>shazam</string>
+		<string>linkedin</string>
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>

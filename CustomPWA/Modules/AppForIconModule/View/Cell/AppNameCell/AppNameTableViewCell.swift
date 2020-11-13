@@ -9,11 +9,7 @@ import UIKit
 
 class AppNameTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var nameTextField: UITextField! {
-        didSet {
-            checkForPlaceholder(textLabel?.text == "")
-        }
-    }
+    @IBOutlet weak var nameTextField: UITextField!
 
     private var textFieldCallback: TextFieldCallback?
     
@@ -43,16 +39,13 @@ class AppNameTableViewCell: UITableViewCell {
         textFieldCallback?(nameTextField.text)
         nameTextField.resignFirstResponder()
     }
-    
-    private func checkForPlaceholder(_ value: Bool) {
-        if value {
-            self.nameTextField.placeholder = Constants.AppForIcon.chooseApplication
-        }
-    }
 }
 
 extension AppNameTableViewCell: UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        if string == "" {
+            nameTextField.placeholder = Constants.AppForIcon.chooseApplication
+        }
         textFieldCallback?(string)
         return true
     }
